@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewData["Title"] = "FormatoParejas";
+}
+
+
+<title>Hoja1</title>
+<h1><str>Centro Universitario de atencion psicologica e investigacion</str>n</h1>
+<h2>Unidad de terapia de Pareja</h2>
+<form>
+
+    <div class="chatForm">
+        <label for="NombreTerapeuta">Terapeuta</label>
+        <input type="text" class="form-control" id="NombreTerapeuta" placeholder="">
+
+        <label for=" Introduzca la fecha">Introduzca la fecha</label>
+        <input type="date" name="fecha" />
+
+        <label for=" Numero de sesion">Numero de sesion</label>
+        <input type="text" id="Numero de sesion" />
+
+
+        <label for="Hora de Inicio">Hora de inicio</label>
+        <input type="time" name="hora de inicio" />
+
+    </div>
+    <div class="form-group"></div>
+
+
+</form>
+
+<h2>Antecedentes y Motivo de consulta</h2>
+
+<form>
+    <div class="chatForm">
+        <h3>Datos paciente 1</h3>
+
+        <label for="NombrePaciente1">Paciente</label>
+        <input type="text" id="NombrePaciente1">
+
+        <label for=" EdadPaciente1">Edad</label>
+        <input type="text" name="EdadPaciente1" />
+
+        <label for=" ActividadPaciente1">Actividad</label>
+        <input type="text" id=" ActividadPaciente1" />
+
+        <label for="EstudiosPaciente1">Estudios</label>
+        <input type="text" name="EstudiosPaciente1" />
+
+
+
+
+    </div>
+    <div class="form-group"></div>
+</form>
+<form2>
+    <h3>Datos paciente 2</h3>
+
+    <label for="NombrePaciente2">Paciente</label>
+    <input type="text" id="NombrePaciente2">
+
+    <label for=" EdadPaciente2">Edad</label>
+    <input type="text" name="EdadPaciente2" />
+
+    <label for=" ActividadPaciente2">Actividad</label>
+    <input type="text" id=" ActividadPaciente2" />
+
+    <label for="EstudiosPaciente2">Estudios</label>
+    <input type="text" name="EstudiosPaciente2" />
+
+</form2>
+
+<form3>
+    <h3></h3>
+    <h2></h2>
+    <label for="EstadoCivil">Estado Civil</label>
+    <input type="text" id="EstadoCivil">
+
+    <label for=" Hijos">Hijos</label>
+    <input type="text" name="Hijos" />
+
+
+    <h3>Genograma (familias de origen , relaciones previas, duracion de la actual, hijos propios y del conyuge)</h3>
+    <div class="form-group">
+        <label for="TextoPreg11"></label>
+        <textarea class="form-control" id="TextoPreg11" rows="5"></textarea>
+    </div>
+    <div class="form-group"></div>
+
+
+
+</form3>
+
+<label for="Preg12">Como se construyo la consulta: (Quien llamo?, Como fue la referencia?, Que conversaciones hubo sobre la decision de venir?)</label>
+<div class="form-group">
+    <label for="TextoPreg12"></label>
+    <textarea class="form-control" id="TextoPreg12" rows="5"></textarea>
+</div>
+<div class="form-group"></div>
+
+
+
+    <li class="page-item active"><a asp-area="" asp-controller="Home" asp-action="FormatoParejas">FormatoParejas</a></li>
+
+    <li class="page-item active"><a asp-area="" asp-controller="Home" asp-action="Hoja2">Hoja2</a></li>

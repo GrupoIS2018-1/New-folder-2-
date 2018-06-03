@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8" />
+    <title>Terapia Familiar</title>
+    <link rel="stylesheet" href="../Content/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/bootstrap/css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Penscape</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" placeholder="Search" type="text">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Centro Universitario de atencion psicologica e investigascion</h1>
+            <p>Unidaad de terapia familiar</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 order-md-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-toggle="tab" href="#identificasion">Indentificacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#evalSocioEconomica">Evaluacion socioeconomica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#motivoConsulta">Motivo de la consulta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#historiales">Historiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#anotaciones">Anotaciones</a>
+                    </li>
+                </ul> 
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active show" id="identificasion">
+                        <div class="row">
+                            <div class="col-md-10 mb-3">
+                                <label class="control-label">Nombre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo el nombre
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label class="control-label">Edad</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Edad
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 mb-3">
+                                <label class="control-label">Sexo</label>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option selected="">select</option>
+                                        <option value="1">Hombre</option>
+                                        <option value="2">Mujer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-10 mb-3">
+                                <label class="control-label">Lugar y fecha de nacimiento</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Lugar y fecha de nacimiento
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="control-label">Tiempo de residir en la ciudad</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Tiempo de residir en la ciudad
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 mb-3">
+                                <label class="control-label">Escolaridad</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label class="control-label">Estado Civil</label>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option selected="">Soltero</option>
+                                        <option value="1">Casado</option>
+                                        <option value="2">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">Lugar que ocupa dentro de la familia</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <label class="control-label">Ocupacion</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Capturar
+                            </div>
+                        </div>
+                        <div>
+                            <label class="control-label" for="disabledInput">Domicilio de la familia</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Capturar
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Telfono de casa</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Celular</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Otro</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Ocupacion
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="evalSocioEconomica">
+                        <div>
+                            <label class="control-label" for="disabledInput">Principal fuente de ingreso</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Capturar
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Ingreso mensual: Madre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Padre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label" for="disabledInput">Otro</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    Capturar
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="control-label" for="disabledInput"> Cuantas personas avitan en la casa?</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Capturar
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Tipo de Construccion</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio1" name="customRadio" class="custom-control-input" checked="" type="radio">
+                                    <label class="custom-control-label" for="customRadio1">Madera</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio2" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio2">material</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio3" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio3">otro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Con que servicios cuenta?</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck1" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck1">Agua</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck2" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck2">Luz</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck3" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck3">Telefono</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck4" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck4">Drenaje</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="motivoConsulta">
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Motivo(Quien lo refirio, historia del problema,Fecha de aparicion y evolucion,Tratamiento o terapia psicologuica anterior, otros datos relevantes)
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Descripcion del pasiente: Aspecto personal,edad que aparenta, estado de animo, lenguaje no verbal actitud frente al terapeuta, con quen viene, otros datos inportantes.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="historiales"> 
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Historia Familiar (Tres generaciones, datos relevantes dentro de la hitoria familiar, eventos especiales, separaciones, reconciliaciones, muertes repentinas, cambios drasticos de domicilio, etc).
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Familiograma (Diagrama familiar)</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Histrorial de adicciones en la familia.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Historia delictiva dentro de la familia.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Historia delictiva dentro de la familia.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Antecedentes de ideacion suicida o intentos dentro de la familia.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Salud (Prolemas de).
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="anotaciones">
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Mecanismos de defenza utilizados por la familia.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Diacnostico.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Plan de Tratamiento.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container" id="pie">
+        <hr class="mb-4">
+        &copy; UABC Tijuana Baja California
+    </footer>
+
+    <script src="../Content/bootstrap/js/jquery.js"></script>
+    <script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

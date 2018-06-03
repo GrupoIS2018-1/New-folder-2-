@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegistroPacientes</title>
+</head>
+
+
+<body>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+ 
+        </ul>
+    </div>
+
+
+
+    <h1>Universidad Autonoma de Baja California</h1>
+    <h2>Centro universitario de atencion psicologica e investigacion</h2>
+    <h3><b>Ficha de Datos Personales</b></h3>
+
+    <form method="post">
+        <fieldset>
+            <legend>Registro de Pacientes</legend>
+
+            <label for="Id">Id:</label>
+            @Html.TextBox("id");
+            <!--<input type="text" name="Id" value=t.Form["id"]" />
+    -->
+
+
+
+
+            <label for="Nombre">Apellidos:</label>
+            @Html.TextBox("firstname");
+
+            <!--
+         <div>
+         <label for="Apellidos">Apellidos:</label>
+         <input type="text" name="Apellidos" value="Request.Form["nombre"]" />
+     </div>
+
+    -->
+            <div>
+                <label for="Nombres">Nombres:</label>
+                <input type="text" name="nombres" value="nombre"/>
+            </div>
+
+
+            <p><input type="submit" name="buttonSubmit" value="Agregar paciente" /></p>
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

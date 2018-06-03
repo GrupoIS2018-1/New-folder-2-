@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Hoja2";
+}
+
+<title>Hoja2</title>
+
+<head>
+    <str>Centro Universitario de atencion psicologica e investigacion</str>
+</head>
+<h1>
+    Unidad de terapia de Pareja
+</h1>
+    <form>
+        <label for="Preg412">Como se construyo la consulta: (Quien llamo?, Como fue la referencia?, Que conversaciones hubo sobre la decision de venir?)</label>
+        <div class="form-group">
+            <label for="TextoPreg12"></label>
+            <textarea class="form-control" id="TextoPreg12" rows="5"></textarea>
+        </div>
+
+        <label for="ContenidosConsulta">Contenidos del motivo de consulta (Seleccione 1 o mas opciones)</label>
+        <h1></h1>
+
+
+
+
+
+        <select multiple size="10">
+            <option value="1">Demostraciones de afecto</option>
+            <option value="2">Sexualidad</option>
+            <option value="3">Educacion de hijos</option>
+            <option value="4">Finanzas</option>
+            <option value="5">Familias de origen</option>
+            <option value="6">Violencia</option>
+            <option value="7">Temas de recreacion</option>
+            <option value="8">Amistades</option>
+            <option value="9">Filosofia de vida (creencias,valores)</option>
+            <option value="10">Convencionalismos (deberes,derechos)</option>
+        </select>
+        <script src="../multiple-select.js"></script>
+        <script>
+            $('select').multipleSelect();
+        </script>
+
+
+        <h2>Despliegue del problema y recursos de la pareja</h2>
+        <h3><b>Despliegue del problema</b></h3>
+        <label for="Descrcontenidos">1.Breve descripcion de los contenidos:</label>
+
+
+        <div class="form-group">
+            <label for="TextoPreg14"></label>
+            <textarea class="form-control" id="TextoPreg14" rows="4"></textarea>
+        </div>
+
+
+        <label for="Descrcontenidos">2. Descripcion de las pautas relacionales:</label>
+        <div class="form-group">
+            <label for="TextoPreg15"></label>
+            <textarea class="form-control" id="TextoPreg15" rows="4"></textarea>
+        </div>
+        </form>

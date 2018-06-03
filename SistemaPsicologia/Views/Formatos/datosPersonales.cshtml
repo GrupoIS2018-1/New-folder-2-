@@ -1,0 +1,322 @@
+﻿
+@{
+    ViewData["Title"] = "datosPersonales";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ficha Datos personales</title>
+    <link rel="stylesheet" href="../Content/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/bootstrap/css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Penscape</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" placeholder="Search" type="text">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Centro Universitario de atencion psicologica e investigascion</h1>
+            <p>Ficha de datos personales</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 order-md-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-toggle="tab" href="#antecedentes">Antecedentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#historiaMigracion">Historia de Migracion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#evalSocioEconomica">
+                            Evaluacion socio economica
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#motConsulta">Motivo de consulta</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+
+                    <div class="tab-pane fade active show" id="antecedentes">
+                        <h5>Ficha de identificasion</h5>
+                        <div class="row">
+                            <div class="col-md-7 mb-3">
+                                <label class="control-label">Nombre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="control-label">Sexo</label>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option selected="">Opciones</option>
+                                        <option value="1">Hombre</option>
+                                        <option value="2">Mujer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label class="control-label">Edad</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Escolaridad</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-8 mb-3">
+                                <label class="control-label">Nombre de la escuela</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Estado Civil</label>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option selected="">Select</option>
+                                        <option value="1">Soltaro</option>
+                                        <option value="2">Casado</option>
+                                        <option value="3">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Ocupacion</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Religion</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="control-label">Domicilio</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                No se capturo
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Telefono de casa</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Travajo</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Celular</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="historiaMigracion">
+                        <div class="col-md-4 mb-3">
+                            <label class="control-label">Lugar de nacimiento </label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                No se capturo
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="control-label">Lugares donde a vivido en el pais </label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                No se capturo
+                            </div>
+                        </div>
+                        <h6>Tiempo de tradicar en tijuana</h6>
+                        <div class="col-md-4 mb-3">
+                            <label class="control-label">
+                                Tiempo de radiacar en E.U.A. en caso de haberlo echo ( especificar los periodos en los que vivio alla y lugares en donde vivio).
+                            </label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                No se capturo
+                            </div>
+                        </div>
+                        ( Posterior mente, durante la entrvista, explora la vinculacion de todos estos cambios de domicilo con las problematicas que presenta).
+                    </div>
+
+                    <div class="tab-pane fade" id="evalSocioEconomica">
+                        <div class="mb-3">
+                            <label class="control-label">Prinsipal fuente de ingresos</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                No se capturo
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Ingrso mensual Madre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Padre</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="control-label">Otro</label>
+                                <input class="form-control" type="text">
+                                <div class="invalid-feedback">
+                                    No se capturo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Vive en casa</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio1" name="customRadio" class="custom-control-input" checked="" type="radio">
+                                    <label class="custom-control-label" for="customRadio1">Propia</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio2" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio2">Alquilada</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio3" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio3">otro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Tipo de Construccion</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio1" name="customRadio" class="custom-control-input" checked="" type="radio">
+                                    <label class="custom-control-label" for="customRadio1">Madera</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio2" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio2">material</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="customRadio3" name="customRadio" class="custom-control-input" type="radio">
+                                    <label class="custom-control-label" for="customRadio3">otro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="control-label" for="disabledInput"> Cuantas personas avitan en la casa?</label>
+                            <input class="form-control" type="text">
+                            <div class="invalid-feedback">
+                                Capturar
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="control-label" for="disabledInput">Con que servicios cuenta?</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck1" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck1">Agua</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck2" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck2">Luz</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck3" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck3">Drenaje</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="motConsulta">
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Motivo (Quien lo refirio, historia del problema, fecah de aparicion y evolucion tratamieno o terapia psicologica enterior, otros datos relevantes)
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">
+                                Descripcion del paciente: Aspecto personal, edad que aparenta, estado de animo, leguaje no verbal, actitud frecuente al terapeuta, conq quien vive, otros daos importantes.
+                            </label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container" id="pie">
+        <hr class="mb-4">
+        &copy; UABC Tijuana Baja California
+    </footer>
+    <script src="../Content/bootstrap/js/jquery.js"></script>
+    <script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
